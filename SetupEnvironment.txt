@@ -1,0 +1,47 @@
+Open Anaconda Prompt:
+
+Step0: Check if conda list is installed
+
+conda env list
+
+Step1: Check if conda is installed in your path.
+
+conda -V
+
+Step 2: Update the conda environment 
+
+conda update conda
+
+Step 3: Set up the virtual environment
+
+conda create -n envname python=3.11 ipykernel
+
+Step 3.5: install notebook inside the enviroment
+
+conda install notebook
+
+Step 3.9: add newly created environment to the notebook as kernel
+
+python -m ipykernel install --user --name=envname 
+
+Step 4: Activating the virtual environment
+
+conda activate envname
+
+Step 5: Installation of required packages to the virtual environment
+
+conda install numpy pandas 
+
+Step 6: Deactivating the virtual environment
+
+conda deactivate
+
+Step 7: Deletion of virtual environment
+
+conda remove -n envname -all
+
+Step 8: Show packeges
+
+conda show namepackeges (Numpy)
+
+
